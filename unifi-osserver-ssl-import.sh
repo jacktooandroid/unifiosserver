@@ -6,7 +6,7 @@
 ############################################################################################
 ################################### Configurable Settings: #################################
 # Domain Name:
-UNIFI_HOSTNAME="unifi.example.com"
+UNIFI_HOSTNAME=""
 
 # Certificate Provider: "certbot" or "acme"
 CERT_PROVIDER="certbot"
