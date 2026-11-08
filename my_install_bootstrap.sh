@@ -92,7 +92,7 @@ echo 'iptables-persistent iptables-persistent/autosave_v4 boolean true' | sudo d
 echo 'iptables-persistent iptables-persistent/autosave_v6 boolean true' | sudo debconf-set-selections
 sudo apt -y install iptables-persistent
 
-# Redirect UniFi Network Application ports
+# Redirect UniFi OS Server ports
 sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 11443
 sudo ip6tables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 11443
 sudo netfilter-persistent save
