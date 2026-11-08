@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # License
 clear
@@ -28,8 +29,6 @@ echo 'Installation will continue in 3 seconds...'
 sleep 3
 
 clear
-
-set -euo pipefail
 
 # Configuration
 TOTALSWAPREQUIREDGB=4
