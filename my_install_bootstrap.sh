@@ -94,6 +94,7 @@ sudo apt -y install iptables-persistent
 
 # Redirect UniFi Network Application ports
 sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 11443
+sudo ip6tables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 11443
 sudo netfilter-persistent save
 
 # Install UniFi OS Server
